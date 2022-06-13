@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.subspec 'SQLite' do |ss|
     ss.source_files = 'Sources/ApolloSQLite/*.swift'
     ss.dependency 'Apollo/Core'
-    ss.dependency 'SQLite.swift', '~>0.12.2'
+    ss.dependency 'SQLite.swift', :git => 'git@github.com:jcospina-wm/SQLite.swift.git'
   end
 
   # Websocket and subscription support based on Starscream
