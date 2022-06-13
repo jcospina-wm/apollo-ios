@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
       'scripts/run-bundled-codegen.sh',
     ]
   end
-
+  source 'https://github.com/jcospina-wm/SQLite.swift.git'
   # Apollo provides exactly one persistent cache out-of-the-box, as a reasonable default choice for
   # those who require cache persistence. Third-party caches may use different storage mechanisms.
   s.subspec 'SQLite' do |ss|
